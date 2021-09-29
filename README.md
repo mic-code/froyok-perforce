@@ -13,8 +13,9 @@ Here are the changes that have been made in the bash script :
 # How to build ?
 Use the following steps :
 1. Download the files into an empty folder
-2. Run to build : **docker build . -t=froyok-perforce --no-cache**
-3. Run to package : **docker save  froyok-perforce > froyok-perforce.tar**
+2. Make sure setup-perforce.sh has linux line ending if git check out windows style
+3. Run to build : **docker build . -t=froyok-perforce --no-cache**
+4. Run to package : **docker save  froyok-perforce -o froyok-perforce.tar**
 
 You will end-up with a **froyok-perforce.tar** file that can be installed on a Docker system. This is compatible with Docker on Synology NAS for example.
 
